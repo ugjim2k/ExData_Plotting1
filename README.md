@@ -1,3 +1,12 @@
+## Instructions to generating the plots
+
+The repo contains 6 R files required to generate the plots 1 - 4. R files titled __plot1.R__, __plot2.R__, __plot3.R__ and __plot4.R__ depend on the following R files in the repo:
+
+* checkPackages.R - Downloads and installs the necessary packages required for the scripts to work.
+* getSource.R - Required to download and extract the required Electric power consumption data from the URL listed in the introduction section below. The file also creates the necessary data frame called "__energy.data__" required for the plot generation.
+
+Ensure that the above 2 R files are downloaded into the same folder as the plot R files. Each individual R plot file can then be executed independently to generate the respective .png files.
+
 ## Introduction
 
 This assignment uses data from
@@ -89,26 +98,25 @@ GitHub so that the GitHub version of your repository is up to
 date. There should be four PNG files and four R code files.
 
 
-The four plots that you will need to construct are shown below. 
+The four plots that you will need to construct are shown below.
 
 
 ### Plot 1
 
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png)
 
 
 ### Plot 2
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png)
 
 
 ### Plot 3
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png)
 
 
 ### Plot 4
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
-
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png)
