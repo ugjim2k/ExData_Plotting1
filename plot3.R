@@ -14,8 +14,10 @@ source('getSource.R')       # Functions for downloading and creating
                             # 'energy.data' data object
 
 # If 'energy.data' is not in current environment, create it
-if(!('energy.data' %in% ls())) 
-    energy.data <- get.data(get.source())     
+if(!('energy.data' %in% ls())) {
+  get.source()
+  energy.data <- get.data()
+}    
 
 dimensions <- list('width' = 480, 'height' = 480)
 plot3.filename <- 'plot3.png'
