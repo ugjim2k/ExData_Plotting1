@@ -31,17 +31,12 @@ get.source <- function() {
           , exdir = data.folder
           , junkpaths = FALSE # Keep everything in the same folder.
     )
-    
-    dir.files <- list.files(path = data.folder)
-    
-    # Returns the filename that was extracted
-    dir.files[(dir.files == dest.filename)]
 }
 
-get.data <- function(data.filename) {
+get.data <- function() {
     # Returns a data frame with only the required data. Searches for the 
     # data.filename from the data folder.
-    
+  
     lower.date.limit <- ymd('2007-02-01')
     upper.date.limit <- ymd('2007-02-02')
     
